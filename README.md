@@ -32,25 +32,27 @@ Things you may want to cover:
 ### Association
 - has_many :posts
 - has_many :groups
+- has_many :group-users
 
 ## postsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|title|text|null: false|
-|text|text|null: false|
+|title|text|
+|text|text|
 |user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 ### Association
 - belongs_to :user
-- belomgs_to :groups
+- belongs_to :group
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|groupname|string|null: false|
-|group_id|integer|null: false, foreign_key: true|
+|name|string|null: false|
 ### Association
-- belongs_to :user
+- has_many :users
 - has_many :posts
+- has_many :groups_users
 
 ## groups_usersテーブル
 
