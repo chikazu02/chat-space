@@ -2,6 +2,8 @@
   box-sizing: border-box;
 }
 
+$text-color: #fafafa;
+
 .wrapper {
   height: 100vh;
   width: 100vw;
@@ -11,7 +13,7 @@
   background-color: #253141;
   width: 300px;
   height: 100vh;
-  color: white;
+  color: $text-color;
   font-weight: bold;
   float: left;
 
@@ -37,13 +39,13 @@
         display: flex;
 
         .icon1 {
-          color: white;
+          color: $text-color;
           text-decoration: none;
           margin-right: 5px;
         }
 
         .icon2 {
-          color: white;
+          color: $text-color;
           text-decoration: none;
           margin-right: 0;
         }
@@ -59,7 +61,7 @@
     &__box {
       margin-bottom: 40px;
       a{
-        color:white;
+        color: $text-color;
         text-decoration: none;
       }
 
@@ -126,8 +128,9 @@
 
   &__content {
     height: calc(100vh - 100px - 90px);
-    background-color: #fafafa;
+    background-color: $text-color;
     padding: 35px 40px;
+    overflow: scroll;
 
     &__message {
       margin-bottom: 46px;
@@ -184,7 +187,7 @@
       }
       .submit-btn {
         background-color: #38aef0;
-        color: white;
+        color: $text-color;
         margin-left: 15px;
         width: 100px;
         cursor: pointer;
