@@ -69,7 +69,7 @@ $(function(){
 
 
   var reloadMessages = function() {
-    var last_message_id = $('.main__content__message:last').data("message-id");
+    var last_message_id = $('.main__content__message:last').data("main__content__message-id");
     $.ajax({
       url: "api/messages",
       type: 'GET',
